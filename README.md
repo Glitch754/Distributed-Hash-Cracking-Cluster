@@ -82,3 +82,28 @@ Then i went back on the Command Prompt on both machines as Admin and used the ip
 Now we are ready for step 2
 
 # Step 2: Wipe the server and install Proxmox VE 9.2
+
+I first installed the Proxmox VE 9.2 ISO Installer at: https://www.proxmox.com/en/downloads/proxmox-virtual-environment/iso/proxmox-ve-9-2-iso-installer
+
+*Proxmox downloads page*
+
+<img width="947" height="960" alt="Prox1" src="https://github.com/user-attachments/assets/d7faf495-3371-472e-9779-bfdb7428a718" />
+
+
+Then i verified if the download wasn't corrupted by opening a PowerShell where the file downloaded is located and run: Get-FileHash ./proxmox-ve_9.2-1.iso -Algorithm SHA256 to get the SHA256checksum before comparing it to the official checksum
+
+*PowerShell console showing the SHA256SUM*
+
+<img width="841" height="130" alt="Prox2" src="https://github.com/user-attachments/assets/56d1b20d-3478-4cee-a865-a411b4a34947" />
+
+Now that we are sure the download isn't corrupted, we'll use Rufus to write the ISO image on a bootable USB stick
+
+*Rufus before*
+
+<img width="469" height="539" alt="Rufus1" src="https://github.com/user-attachments/assets/d31fb15a-1809-46a6-b48e-f9288a87b30e" />
+
+*Rufus after*
+
+<img width="471" height="537" alt="Rufus2" src="https://github.com/user-attachments/assets/845dedac-ef56-474b-8e72-6f4e514bc64a" />
+
+Now that we have the installer ready, we will make the server boot into the USB stick to install Proxmox
