@@ -107,3 +107,67 @@ Now that we are sure the download isn't corrupted, we'll use Rufus to write the 
 <img width="471" height="537" alt="Rufus2" src="https://github.com/user-attachments/assets/845dedac-ef56-474b-8e72-6f4e514bc64a" />
 
 Now that we have the installer ready, we will make the server boot into the USB stick to install Proxmox
+
+*Boot Menu*
+
+aaaaa
+
+We will select the "Install Proxmox VE (Graphical) option
+
+*License*
+
+aaaa
+
+Click "I agree"
+
+*Target Disk*
+
+aaaa
+
+Since i only have a 2TB HDD on the server i'll only check if the filesystem is "ext4" and just click "Next
+
+*Location/timezone/keyboard*
+
+aaaaaa
+
+Since i'm in Romania, i'll select Romania/Bucharest and leave the keyboard as it is
+
+*Root passord + email*
+
+aaaaaa
+
+Here i'll just put my personal gmail and a password
+
+*Network configuration*
+
+aaaaaa
+
+Here i've put:
+1. Management Interface -> My server's MAC Address
+2. Hostname (FQDN) -> pve.server (its just the name)
+3. IP Address -> 192.168.0.102 (The static ip of my server)
+4. Gateway -> my router's Default Gateway
+5. DNS Server -> my router's Primary DNS
+
+*Summary*
+
+aaaaa
+
+Simply click "Install" and let it do it's thing 
+
+*ProxMox installing*
+
+aaaa
+
+*ProxMox almost done*
+
+aaaaaa
+
+*Install complete*
+
+Now we will need to configure the server,
+
+Now that ProxMox is finaly local, we can start step 3.
+
+# Step 3
+
