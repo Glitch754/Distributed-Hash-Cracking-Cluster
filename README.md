@@ -108,6 +108,8 @@ Now that we are sure the download isn't corrupted, we'll use Rufus to write the 
 
 Now that we have the installer ready, we will make the server boot into the USB stick to install Proxmox
 
+aaaaaaa
+
 *Boot Menu*
 
 aaaaa
